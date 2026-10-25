@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top_panel">
+            <h1 class="logo">Program_IT</h1>
+                <a href="#">Главная</a>
+                <a href="#">Наши разработчики</a>
+                <a href="#">Вопросы</a>
+                <a href="#">О нас</a>
+        </div>
+
+        <div class="auth-buttons">
+            <button class="btn-log" id="openLogin">Войти</button>
+            <button class="btn-registr" id="openreg">Регистрация</button>
+        </div>
+
+        <div class="registration" id="registration">
+            <div class="modal">
+                <button class="close-btn" id="closeModal">&times;</button>
+                <h2 id="modalTitle">Регистрация</h2>
+
+                <form id="regForm">
+                    <label for="name">Логин:</label>
+                    <input type="text" id="name" placeholder="Ваш логин" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="you@gmail.com" required>
+
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" placeholder="Минимум 8 символов" minlength="6" required>
+
+                    <button type="submit" class="btn-reg">Зарегистрироваться</button>
+                </form>
+
+                <button class="switch-link" id="switchMode">Уже есть аккаунт? Войти</button>
+            </div>
+        </div>
+
+        <div class="login" id="login">
+            <div class="modal_login">
+                <button class="close-btn" id="closeModal">&times;</button>
+                <h2 id="modallogintitle">Вход</h2>
+
+                <form id="loginForm">
+                    <label for="name">Логин:</label>
+                    <input type="text" id="name" placeholder="Введи свой логин" required>
+
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" placeholder="Введи свой пароль" minlength="8" required>
+
+                    <button type="submit" class="btn-login">Войти</button>
+                </form>
+
+                <button class="login-link" id="switchMode">Нету аккаунта? Зарегистрироваться</button>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>    
+</body>
+</html>

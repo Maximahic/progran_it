@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: "Lucida Console", "Courier New", monospace;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.top_panel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  gap: 8px;
+  min-height: 68px;
+}
+
+.logo {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(100, 231, 199, 0.4);
+  white-space: nowrap;
+}
+
+.top_panel a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.top_panel a:hover {
+  color: #64e7c7;
+  background: rgba(100, 231, 199, 0.1);
+}
+
+.top_panel .actions-group {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.top_panel .btn-telegram,
+.top_panel .btn-project {
+  height: 44px;
+  padding: 0 16px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.top_panel .btn-telegram {
+  border: 1px solid #334155;
+  background: transparent;
+  color: #94a3b8;
+}
+
+.top_panel .btn-telegram:hover {
+  border-color: #94a3b8;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(100, 231, 199, 0.2);
+}
+
+.top_panel .btn-project {
+  border: none;
+  background-color: #ef4444;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.top_panel .btn-project:hover {
+  background-color: #dc2626;
+  box-shadow: 0 0 16px rgba(239, 68, 68, 0.4);
+}
+
+.top_panel .theme-toggle {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-reg {
+  background-color: aqua;
+  color: #0f172a;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-weight: 600;
+  display: block;
+}
+
+.btn-reg:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.btn-login {
+  background-color: aqua;
+  color: #0f172a;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-weight: 600;
+  display: block;
+}
+
+.btn-login:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+@media (max-width: 960px) {
+  .top_panel {
+    flex-direction: column;
+    padding: 12px;
+    gap: 12px;
+    min-height: auto;
+  }
+
+  .logo {
+    position: static;
+    transform: none;
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  .top_panel .actions-group {
+    position: static;
+    transform: none;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .top_panel a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .top_panel .btn-telegram,
+  .top_panel .btn-project {
+    width: 100%;
+    max-width: 280px;
+  }
+}
