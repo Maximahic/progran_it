@@ -84,6 +84,7 @@ body {
   transform: scale(1.05);
 }
 
+
 .login {
   position: fixed;
   inset: 0;
@@ -466,4 +467,32 @@ body {
     margin: 16px;
     padding: 28px 20px 22px;
   }
+}
+
+.typesetting {
+  max-width: 600px;
+  margin: 0 auto 0 0;
+  text-align: left;
+  padding: 20px 16px;
+  transform: translateX(40px);
+}
+
+.post1 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.post1:last-child {
+
+  margin-bottom: 0;
+}
+
+.name-project {
+  font-size: 30px;
+  color: #3b82f6;
+  font-family: Arial, Helvetica, sans-serif;
 }
